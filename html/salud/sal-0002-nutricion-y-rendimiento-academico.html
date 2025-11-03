@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nutrición y rendimiento académico: una relación poco valorada — Plataforma Académica UDEO</title>
+  <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner" style="width:100%">
+      <a href="/index.html" class="brand" aria-label="Inicio">
+        <div class="brand__logo">
+          <img src="/img/logo-udeo.png" alt="Logo" width="44" height="44">
+        </div>
+        <div class="brand__title">Plataforma Académica UDEO</div>
+      </a>
+
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" hidden>
+      <label for="nav-toggle" class="nav-btn" aria-label="Abrir menú"><span></span></label>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="/index.html">Inicio</a></li>
+          <li><a class="nav__link" href="/html/facultades.html">Facultades</a></li>
+          <li><a class="nav__link" href="/html/avisos.html">Avisos</a></li>
+        </ul>
+      </nav>
+
+      <form id="form-busqueda" class="searchbar" role="search" onsubmit="return false;" style="margin-left:12px">
+        <input id="search-keywords" class="input" type="search" placeholder="Buscar por palabras clave">
+        <button id="btn-search" class="btn btn--primary" type="button">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="header-spacer"></div>
+
+    <section class="hero">
+      <div class="container hero__wrap" style="grid-template-columns:1fr">
+        <div class="hero__content">
+          <nav class="util-muted" aria-label="Miga de pan" style="margin-bottom:8px">
+            <a href="/index.html">Inicio</a> ·
+            <a href="/html/facultades.html">Facultades</a> ·
+            <span>Salud</span>
+          </nav>
+
+          <h1 class="hero__title">Nutrición y rendimiento académico: una relación poco valorada</h1>
+          <p class="hero__desc">Cómo los hábitos alimenticios impactan la atención, la memoria y el desempeño en la vida universitaria.</p>
+
+          <div class="hero__actions util-row" style="gap:8px;flex-wrap:wrap">
+            <button class="btn btn--primary" id="btn-descargar" type="button" data-print>Descargar PDF</button>
+            <a class="btn btn--ghost" href="/html/facultades.html">Ver Facultad</a>
+            <a class="btn btn--soft" href="/index.html">Volver</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contenido" class="section">
+      <div class="container">
+        <div class="prose prose--flow" id="art-contenido">
+          <h2>Introducción</h2>
+          <p>
+            La nutrición es un pilar fundamental en el desarrollo físico y mental del ser humano, sin embargo, su impacto en el rendimiento académico suele ser subestimado. En el contexto universitario, los hábitos alimenticios inadecuados se convierten en un problema común debido a la falta de tiempo, los costos elevados de una alimentación saludable y el desconocimiento sobre su importancia.
+          </p>
+          <p>
+            En Guatemala, diversos estudios han señalado que una gran parte de los estudiantes universitarios presenta patrones alimenticios irregulares, omitiendo comidas o consumiendo productos ultraprocesados que, a largo plazo, afectan su concentración, memoria y estado emocional. Este artículo analiza cómo la nutrición influye directamente en el desempeño académico y qué estrategias pueden implementarse para mejorarla.
+          </p>
+
+          <h2>Contenido</h2>
+
+          <h3>1. La relación entre alimentación y función cognitiva</h3>
+          <p>
+            El cerebro necesita un suministro constante de nutrientes para funcionar correctamente. La falta de vitaminas, minerales y proteínas esenciales puede afectar los procesos de atención, memoria y aprendizaje. Algunos puntos clave incluyen:
+          </p>
+          <ul>
+            <li><strong>Glucosa y concentración:</strong> una baja en los niveles de glucosa puede provocar fatiga mental y dificultad para mantener la atención.</li>
+            <li><strong>Ácidos grasos esenciales:</strong> presentes en el pescado, las nueces y el aguacate, ayudan al desarrollo neuronal.</li>
+            <li><strong>Vitaminas del complejo B:</strong> esenciales para el metabolismo energético del sistema nervioso.</li>
+            <li><strong>Hidratación adecuada:</strong> incluso una deshidratación leve puede reducir la capacidad cognitiva y la velocidad de respuesta.</li>
+          </ul>
+
+          <h3>2. Malos hábitos alimenticios en la vida universitaria</h3>
+          <p>
+            El estilo de vida universitario tiende a promover rutinas desordenadas, especialmente en lo referente a la alimentación. Entre los hábitos más frecuentes se encuentran:
+          </p>
+          <ul>
+            <li>Saltar comidas, en especial el desayuno.</li>
+            <li>Sustituir alimentos por bebidas energéticas o café.</li>
+            <li>Consumir comida rápida por comodidad o falta de tiempo.</li>
+            <li>Exceso de azúcares refinados y grasas saturadas.</li>
+          </ul>
+          <p>
+            Estos patrones no solo afectan la energía diaria, sino que también inciden en el estado de ánimo y en la capacidad de retención de información. Un estudio comparativo hipotético puede resumirse así:
+          </p>
+
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Tipo de dieta</th>
+                  <th>Características</th>
+                  <th>Impacto académico</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Balanceada</strong></td>
+                  <td>Incluye frutas, verduras, proteínas y carbohidratos complejos.</td>
+                  <td>Mayor concentración y memoria activa.</td>
+                </tr>
+                <tr>
+                  <td><strong>Desbalanceada</strong></td>
+                  <td>Basada en comidas rápidas y ultraprocesadas.</td>
+                  <td>Fatiga, bajo rendimiento y desmotivación.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>3. Estrategias para mejorar la nutrición universitaria</h3>
+          <p>Para fomentar un mejor rendimiento académico a través de la nutrición, se pueden implementar acciones en tres niveles:</p>
+
+          <p><strong>A nivel personal:</strong></p>
+          <ul>
+            <li>Planificar las comidas y evitar ayunos prolongados.</li>
+            <li>Incorporar snacks saludables (frutas, semillas, yogur).</li>
+            <li>Mantener una buena hidratación a lo largo del día.</li>
+          </ul>
+
+          <p><strong>A nivel institucional:</strong></p>
+          <ul>
+            <li>Promover campañas de educación alimentaria.</li>
+            <li>Implementar menús saludables en cafeterías universitarias.</li>
+            <li>Fomentar espacios donde los estudiantes puedan comer en horarios adecuados.</li>
+          </ul>
+
+          <p><strong>A nivel social:</strong></p>
+          <ul>
+            <li>Crear conciencia sobre la alimentación como un factor de salud pública.</li>
+            <li>Incentivar programas de acceso a alimentos nutritivos a bajo costo.</li>
+          </ul>
+
+          <h2>Resumen</h2>
+          <p>
+            La nutrición y el rendimiento académico están íntimamente ligados. Una alimentación equilibrada no solo favorece el bienestar físico, sino que optimiza las funciones mentales necesarias para el aprendizaje. En cambio, los malos hábitos alimenticios comprometen la memoria, la concentración y la motivación. Promover una cultura alimentaria saludable dentro del entorno universitario es esencial para formar profesionales con energía, enfoque y salud integral.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resumen" class="section section--tight">
+      <div class="container grid">
+        <aside class="col-6">
+          <div class="sidebar" style="margin-top:12px">
+            <h4 class="sidebar__title">Ficha del artículo</h4>
+            <div class="util-stack-sm">
+              <div class="util-row" style="gap:8px;flex-wrap:wrap">
+                <div class="badge">Salud</div>
+                <div class="badge">Facultad de Salud</div>
+                <div class="badge">2025</div>
+              </div>
+            </div>
+            <div class="util-stack-sm" style="margin-top:12px">
+              <div class="util-muted">Autor</div>
+              <div>J. Pérez</div>
+            </div>
+            <div class="util-stack-sm">
+              <div class="util-muted">Tipo de trabajo</div>
+              <div>Artículo académico</div>
+            </div>
+            <div class="util-stack-sm">
+              <div class="util-muted">Palabras clave</div>
+              <div class="chips">
+                <span class="chip">nutrición</span>
+                <span class="chip">rendimiento académico</span>
+                <span class="chip">alimentación</span>
+                <span class="chip">bienestar estudiantil</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <aside class="col-6">
+          <div class="sidebar" style="margin-top:12px">
+            <h4 class="sidebar__title">Cómo citar</h4>
+            <div class="prose">
+              <p id="art-cita-apa" class="util-muted">
+                Pérez, J. (2025). <i>Nutrición y rendimiento académico: una relación poco valorada</i>. Universidad de Occidente — Sede Mazatenango.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="metadatos" class="section section--tight">
+      <div class="container">
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th>Campo</th><th>Detalle</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fecha de publicación</td>
+                <td>2 de noviembre de 2025</td>
+              </tr>
+              <tr>
+                <td>Institución</td>
+                <td>Universidad de Occidente — Sede Mazatenango</td>
+              </tr>
+              <tr>
+                <td>Licencia</td>
+                <td>Todos los derechos reservados</td>
+              </tr>
+              <tr>
+                <td>Identificador</td>
+                <td>art-sal-0002</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="relacionados" class="section">
+      <div class="container util-stack-md">
+        <h2 class="section__title">Más de esta facultad</h2>
+        <p class="section__subtitle">Artículos relacionados</p>
+        <div class="home-cards" id="cards-relacionados"></div>
+        <div class="util-row" style="justify-content:flex-end">
+          <a class="btn btn--ghost" href="/html/facultades.html">Ver todos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid">
+      <div class="col-12 util-stack-sm">
+        <div class="footer__brand">
+          <img src="/img/logo-udeo-mini.png" alt="UDEO" width="28" height="28">
+          <span>Plataforma Académica UDEO</span>
+        </div>
+        <div class="footer__bottom">© 2025 Universidad de Occidente — Sede Mazatenango. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/inicio.js"></script>
+  <script src="../../js/contenido-inicio.js"></script>
+  <script>window.ART_ID = 'art-sal-0002';</script>
+  <script src="../../js/articulo.js"></script>
+  <script src="../../js/print-article.js"></script>
+</body>
+</html>

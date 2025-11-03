@@ -1,0 +1,202 @@
+<!-- html/<facultad>/<archivo>.html  (plantilla base para artículos) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="doc-title">Artículo — Plataforma Académica UDEO</title>
+
+  <!-- OJO: este archivo está DOS niveles debajo de /css -->
+  <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner" style="width:100%">
+      <!-- Enlaces ajustados: el artículo está 1 nivel debajo de /html -->
+      <a href="../inicio.html" class="brand" aria-label="Inicio">
+        <div class="brand__logo">
+          <img src="../../img/logo-udeo.png" alt="Logo" width="44" height="44">
+        </div>
+        <div class="brand__title">Plataforma Académica UDEO</div>
+      </a>
+
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" hidden>
+      <label for="nav-toggle" class="nav-btn" aria-label="Abrir menú">
+        <span></span>
+      </label>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="../inicio.html">Inicio</a></li>
+          <li><a class="nav__link" href="../facultades.html">Facultades</a></li>
+          <li><a class="nav__link" href="../avisos.html">Avisos</a></li>
+        </ul>
+      </nav>
+
+      <form id="form-busqueda" class="searchbar" role="search" onsubmit="return false;" style="margin-left:12px">
+        <input id="search-keywords" class="input" type="search" placeholder="Buscar por palabras clave">
+        <button id="btn-search" class="btn btn--primary" type="button">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="header-spacer"></div>
+
+    <!-- Héroe del artículo -->
+    <section class="hero">
+      <div class="container hero__wrap">
+        <div class="hero__content">
+          <nav class="util-muted" aria-label="Miga de pan" style="margin-bottom:8px">
+            <a href="../inicio.html">Inicio</a> ·
+            <a id="bc-facultad" href="../facultades.html">Facultades</a> ·
+            <span id="bc-carrera">Carrera</span>
+          </nav>
+
+          <h1 class="hero__title" id="art-titulo">Título del artículo</h1>
+          <p class="hero__desc" id="art-subtitulo">Subtítulo o línea descriptiva breve del trabajo.</p>
+
+          <div class="hero__actions util-row" style="gap:8px;flex-wrap:wrap">
+            <a class="btn btn--primary" id="btn-descargar" href="#" target="_blank" rel="noopener">Descargar PDF</a>
+            <a class="btn btn--ghost" id="btn-ver-facultad" href="../facultades.html">Ver Facultad</a>
+            <a class="btn btn--soft" id="btn-volver" href="../inicio.html">Volver</a>
+          </div>
+        </div>
+
+        <aside class="util-surface util-pad" style="border-radius:16px;min-width:280px">
+          <div class="util-stack-sm">
+            <div class="badge" id="art-facultad">Facultad</div>
+            <div class="badge" id="art-carrera">Carrera</div>
+            <div class="badge" id="art-anio">Año</div>
+          </div>
+          <div class="util-stack-sm" style="margin-top:12px">
+            <div class="util-muted">Autor(es)</div>
+            <div id="art-autores">—</div>
+          </div>
+          <div class="util-stack-sm">
+            <div class="util-muted">Tipo de trabajo</div>
+            <div id="art-tipo">Artículo</div>
+          </div>
+          <div class="util-stack-sm">
+            <div class="util-muted">Palabras clave</div>
+            <div class="chips" id="art-etiquetas"></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Contenido largo del artículo (AQUÍ ESCRIBES) -->
+    <section id="contenido" class="section">
+      <div class="container">
+        <div class="prose" id="art-contenido">
+          
+            <h2>Estrategias de Marketing Digital para PYMEs en Suchitepéquez: Un Enfoque Investigativo</h2>
+            <p>En la era de la transformación digital, las pequeñas y medianas empresas (PYMEs) en regiones menos urbanizadas enfrentan tanto retos como oportunidades particulares para aprovechar el marketing digital. Este artículo tiene como objetivo analizar las estrategias digitales que pueden aplicarse en el contexto del departamento de Suchitepéquez (Guatemala), situando el análisis en un marco investigativo-estudiantil: se revisan datos del entorno, se identifican barreras y se proponen rutas estratégicas adaptadas al contexto local.</p>
+
+            <h3>Contexto del entorno digital en Guatemala y Suchitepéquez</h3>
+            <ul>
+              <p>Para entender las posibilidades de marketing digital para PYMEs en Suchitepéquez, es fundamental partir de algunos datos nacionales que brindan contexto:</p>
+              <li>En Guatemala hay aproximadamente 11 millones de usuarios de internet en enero de 2023, lo que representa alrededor del 60 % de la población.</li>
+              <li>De esos usuarios, cerca de 8.7 millones usan redes sociales, equivalente al 48.4 % de la población.</li>
+              <li>Dentro de los canales más usados para promoción y ventas se encuentra Facebook, que en Guatemala llegó a una cobertura del 74.5 % del total de internautas en 2022.</li>
+              <li>Además, el comercio electrónico en el país ha tenido un crecimiento importante: entre 2020 y 2022 las empresas domésticas que venden en línea pasaron de unas 6 500 a unas 17 200, de las cuales aproximadamente el 96 % son PYMEs.</li>
+            </ul>
+
+            <h3>Retos y barreras específicas</h3>
+            <p>…</p>
+
+            <h3>Oportunidades concretas</h3>
+            <p>…</p>
+
+            <h3>Marco estratégico</h3>
+            <h4>1. Visibilidad</h4>
+            <p>…</p>
+            <h4>2. Interacción y Conversión</h4>
+            <p>…</p>
+            <h4>3. Fidelización</h4>
+            <p>…</p>
+
+            <h3>Conclusión</h3>
+            <p>…</p>
+        </div>
+      </div>
+    </section>
+    <section id="resumen" class="section section--tight">
+      <div class="container grid">
+        <aside class="col-4">
+          <div class="sidebar" style="margin-top:12px">
+            <h4 class="sidebar__title">Cómo citar</h4>
+            <div class="prose">
+              <p id="art-cita-apa" class="util-muted">Cita estilo APA aquí.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Metadatos -->
+    <section id="metadatos" class="section section--tight">
+      <div class="container">
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th>Campo</th><th>Detalle</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fecha de publicación</td>
+                <td id="art-fecha">—</td>
+              </tr>
+              <tr>
+                <td>Institución</td>
+                <td>Universidad de Occidente — Sede Mazatenango</td>
+              </tr>
+              <tr>
+                <td>Licencia</td>
+                <td id="art-licencia">Todos los derechos reservados</td>
+              </tr>
+              <tr>
+                <td>Identificador</td>
+                <td id="art-id">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Relacionados -->
+    <section id="relacionados" class="section">
+      <div class="container util-stack-md">
+        <h2 class="section__title">Más de esta facultad</h2>
+        <p class="section__subtitle">Artículos relacionados</p>
+        <div class="home-cards" id="cards-relacionados"></div>
+        <div class="util-row" style="justify-content:flex-end">
+          <a class="btn btn--ghost" id="btn-ver-todos" href="../facultades.html">Ver todos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid">
+      <div class="col-12 util-stack-sm">
+        <div class="footer__brand">
+          <img src="../../img/logo-udeo-mini.png" alt="UDEO" width="28" height="28">
+          <span>Plataforma Académica UDEO</span>
+        </div>
+        <div class="footer__bottom">© 2025 Universidad de Occidente — Sede Mazatenango. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: primero estado global (Repo), luego render del artículo -->
+  <script src="../../js/inicio.js"></script>
+  <script src="../../js/contenido-inicio.js"></script>
+
+  <!-- (Opcional) Si quieres forzar el id del artículo en este archivo específico, descomenta y edita: -->
+  <!-- <script>window.ART_ID = 'art-002';</script> -->
+
+  <script src="../../js/articulo.js"></script>
+</body>
+</html>

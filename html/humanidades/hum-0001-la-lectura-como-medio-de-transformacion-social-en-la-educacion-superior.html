@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La lectura como medio de transformación social en la educación superior — Plataforma Académica UDEO</title>
+
+  <!-- Este archivo está DOS niveles debajo de /css -->
+  <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner" style="width:100%">
+      <!-- Siempre apunta al index de la raíz -->
+      <a href="/index.html" class="brand" aria-label="Inicio">
+        <div class="brand__logo">
+          <img src="/img/logo-udeo.png" alt="Logo" width="44" height="44">
+        </div>
+        <div class="brand__title">Plataforma Académica UDEO</div>
+      </a>
+
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" hidden>
+      <label for="nav-toggle" class="nav-btn" aria-label="Abrir menú">
+        <span></span>
+      </label>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="/index.html">Inicio</a></li>
+          <li><a class="nav__link" href="/html/facultades.html">Facultades</a></li>
+          <li><a class="nav__link" href="/html/avisos.html">Avisos</a></li>
+        </ul>
+      </nav>
+
+      <form id="form-busqueda" class="searchbar" role="search" onsubmit="return false;" style="margin-left:12px">
+        <input id="search-keywords" class="input" type="search" placeholder="Buscar por palabras clave">
+        <button id="btn-search" class="btn btn--primary" type="button">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="header-spacer"></div>
+
+    <!-- Héroe del artículo (ensanchado, sin sidebar) -->
+    <section class="hero">
+      <div class="container hero__wrap" style="grid-template-columns:1fr">
+        <div class="hero__content">
+          <nav class="util-muted" aria-label="Miga de pan" style="margin-bottom:8px">
+            <a href="/index.html">Inicio</a> ·
+            <a href="/html/facultades.html">Facultades</a> ·
+            <span>Humanidades</span>
+          </nav>
+
+          <h1 class="hero__title">La lectura como medio de transformación social en la educación superior</h1>
+          <p class="hero__desc">Leer para comprender, cuestionar y transformar: un puente entre el conocimiento y la acción social.</p>
+
+          <div class="hero__actions util-row" style="gap:8px;flex-wrap:wrap">
+            <button class="btn btn--primary" id="btn-descargar" type="button" data-print>Descargar PDF</button>
+            <a class="btn btn--ghost" href="/html/facultades.html">Ver Facultad</a>
+            <a class="btn btn--soft" href="/index.html">Volver</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenido principal del artículo -->
+    <section id="contenido" class="section">
+      <div class="container">
+        <!-- Agrega 'prose--flow' si quieres columnas automáticas en escritorios anchos -->
+        <div class="prose prose--flow" id="art-contenido">
+          <h2>Introducción</h2>
+          <p>
+            La lectura ha sido, desde los orígenes de la civilización, una herramienta esencial para el desarrollo del pensamiento y la construcción de sociedades más críticas y participativas. En el contexto de la educación superior, su papel trasciende la simple adquisición de conocimientos: leer implica reflexionar, cuestionar y reconstruir el mundo desde la comprensión y la empatía. En un país como Guatemala, donde las desigualdades sociales, económicas y culturales aún persisten, la lectura se convierte en una vía de transformación individual y colectiva.
+          </p>
+
+          <h2>Contenido</h2>
+
+          <h3>1. La lectura como acto emancipador</h3>
+          <p>
+            Leer no es únicamente un ejercicio académico; es también un acto de libertad. A través de la lectura, los estudiantes universitarios tienen la posibilidad de acceder a ideas diversas, confrontar paradigmas y ampliar su visión del entorno. Paulo Freire (1970) planteaba que la lectura del mundo precede a la lectura de la palabra, destacando que el proceso lector debe orientarse hacia la comprensión crítica de la realidad.
+          </p>
+          <p>Entre las principales funciones transformadoras de la lectura se pueden mencionar:</p>
+          <ul>
+            <li><strong>Conciencia social:</strong> permite comprender las estructuras de poder y desigualdad.</li>
+            <li><strong>Empatía y sensibilidad humana:</strong> fomenta el reconocimiento del otro como sujeto con voz propia.</li>
+            <li><strong>Pensamiento crítico:</strong> impulsa el análisis de los discursos y narrativas dominantes.</li>
+          </ul>
+
+          <h3>2. La lectura en la educación superior guatemalteca</h3>
+          <p>
+            Las universidades, como espacios de pensamiento, tienen la responsabilidad de promover la lectura no solo como requisito académico, sino como práctica cultural y social. Sin embargo, en muchas instituciones el hábito lector enfrenta obstáculos como la falta de bibliotecas actualizadas, el acceso limitado a textos digitales y la poca motivación del alumnado por leer fuera de lo obligatorio.
+          </p>
+
+          <p>A pesar de ello, surgen <strong>iniciativas significativas</strong>, tales como:</p>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Programa o iniciativa</th>
+                  <th>Institución</th>
+                  <th>Enfoque principal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>“Lecturas para Pensar”</td>
+                  <td>Universidad de San Carlos de Guatemala</td>
+                  <td>Promoción del pensamiento crítico y la discusión literaria</td>
+                </tr>
+                <tr>
+                  <td>“Leer para Transformar”</td>
+                  <td>Universidad Rafael Landívar</td>
+                  <td>Vinculación entre literatura y cambio social</td>
+                </tr>
+                <tr>
+                  <td>Clubes de lectura universitaria</td>
+                  <td>Diversas universidades privadas</td>
+                  <td>Creación de comunidades lectoras autónomas</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            Estas experiencias demuestran que la lectura puede ser motor de cambio cuando se integra a la vida universitaria desde un enfoque participativo y reflexivo.
+          </p>
+
+          <h3>3. Leer para transformar: del individuo a la sociedad</h3>
+          <p>
+            El impacto de la lectura no se limita al ámbito personal. Un estudiante lector desarrolla mayor conciencia sobre su entorno, se involucra en la búsqueda de soluciones y se convierte en agente activo del cambio. Cuando las comunidades universitarias fomentan la lectura crítica, fortalecen la democracia, la inclusión y la convivencia.
+          </p>
+
+          <div class="callout">
+            <p><strong>Cadena de transformación lectora:</strong><br>
+              <span aria-label="Cadena de transformación">Lectura → Reflexión → Conciencia → Acción → Transformación social</span>
+            </p>
+          </div>
+
+          <p>
+            Cada libro leído puede ser una semilla de cambio, siempre que exista un acompañamiento docente y un contexto institucional que lo promueva.
+          </p>
+
+          <h2>Resumen</h2>
+          <p>
+            La lectura en la educación superior no debe entenderse como una actividad meramente académica, sino como un proceso liberador capaz de transformar la conciencia social. Fomentar el hábito lector implica formar ciudadanos críticos, sensibles y comprometidos con su realidad. En la universidad, leer es aprender a mirar el mundo con otros ojos, comprenderlo desde su complejidad y actuar para mejorarlo. Así, la lectura se convierte en un puente entre el conocimiento y la acción social, en una herramienta de cambio que humaniza y construye comunidad.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ficha + Cómo citar (lado a lado, bajado desde el héroe) -->
+    <section id="resumen" class="section section--tight">
+      <div class="container grid">
+        <!-- Col 1: Ficha del artículo -->
+        <aside class="col-6">
+          <div class="sidebar" style="margin-top:12px">
+            <h4 class="sidebar__title">Ficha del artículo</h4>
+
+            <div class="util-stack-sm">
+              <div class="util-row" style="gap:8px;flex-wrap:wrap">
+                <div class="badge">Humanidades</div>
+                <div class="badge">Facultad de Humanidades</div>
+                <div class="badge">2025</div>
+              </div>
+            </div>
+
+            <div class="util-stack-sm" style="margin-top:12px">
+              <div class="util-muted">Autor</div>
+              <div>C. Martínez</div>
+            </div>
+
+            <div class="util-stack-sm">
+              <div class="util-muted">Tipo de trabajo</div>
+              <div>Artículo académico</div>
+            </div>
+
+            <div class="util-stack-sm">
+              <div class="util-muted">Palabras clave</div>
+              <div class="chips">
+                <span class="chip">lectura</span>
+                <span class="chip">educación superior</span>
+                <span class="chip">transformación social</span>
+                <span class="chip">hábitos lectores</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Col 2: Cómo citar -->
+        <aside class="col-6">
+          <div class="sidebar" style="margin-top:12px">
+            <h4 class="sidebar__title">Cómo citar</h4>
+            <div class="prose">
+              <p id="art-cita-apa" class="util-muted">
+                Martínez, C. (2025). <i>La lectura como medio de transformación social en la educación superior</i>. 
+                Universidad de Occidente — Sede Mazatenango.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Metadatos -->
+    <section id="metadatos" class="section section--tight">
+      <div class="container">
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th>Campo</th><th>Detalle</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fecha de publicación</td>
+                <td>1 de noviembre de 2025</td>
+              </tr>
+              <tr>
+                <td>Institución</td>
+                <td>Universidad de Occidente — Sede Mazatenango</td>
+              </tr>
+              <tr>
+                <td>Licencia</td>
+                <td>Todos los derechos reservados</td>
+              </tr>
+              <tr>
+                <td>Identificador</td>
+                <td>art-hum-0001</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Relacionados -->
+    <section id="relacionados" class="section">
+      <div class="container util-stack-md">
+        <h2 class="section__title">Más de esta facultad</h2>
+        <p class="section__subtitle">Artículos relacionados</p>
+        <div class="home-cards" id="cards-relacionados"></div>
+        <div class="util-row" style="justify-content:flex-end">
+          <a class="btn btn--ghost" href="/html/facultades.html">Ver todos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid">
+      <div class="col-12 util-stack-sm">
+        <div class="footer__brand">
+          <img src="/img/logo-udeo-mini.png" alt="UDEO" width="28" height="28">
+          <span>Plataforma Académica UDEO</span>
+        </div>
+        <div class="footer__bottom">© 2025 Universidad de Occidente — Sede Mazatenango. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: estado global (Repo), luego contenido y detail loader -->
+  <script src="../../js/inicio.js"></script>
+  <script src="../../js/contenido-inicio.js"></script>
+  <script>window.ART_ID = 'art-hum-0001';</script>
+  <script src="../../js/articulo.js"></script>
+  <script src="../../js/print-article.js"></script>
+</body>
+</html>

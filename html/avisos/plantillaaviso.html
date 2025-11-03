@@ -1,0 +1,129 @@
+<!-- html/avisos/plantillaaviso.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Título del aviso — Plataforma Académica UDEO</title>
+
+  <!-- Desde /html/avisos/* sube dos niveles para /css -->
+  <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner" style="width:100%">
+      <!-- Desde /html/avisos/* sube un nivel para /html/* -->
+      <a href="../inicio.html" class="brand" aria-label="Inicio">
+        <div class="brand__logo">
+          <img src="../../img/logo-udeo.png" alt="Logo" width="44" height="44">
+        </div>
+        <div class="brand__title">Plataforma Académica UDEO</div>
+      </a>
+
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" hidden>
+      <label for="nav-toggle" class="nav-btn" aria-label="Abrir menú"><span></span></label>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="../inicio.html">Inicio</a></li>
+          <li><a class="nav__link" href="../facultades.html">Facultades</a></li>
+          <li><a class="nav__link" href="../avisos.html">Avisos</a></li>
+          <li><a class="nav__link" href="../noticias.html">Noticias</a></li>
+        </ul>
+      </nav>
+
+      <form id="form-busqueda" class="searchbar" role="search" onsubmit="return false;" style="margin-left:12px">
+        <input id="search-keywords" class="input" type="search" placeholder="Buscar por palabras clave">
+        <button id="btn-search" class="btn btn--primary" type="button">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="header-spacer"></div>
+
+    <!-- Héroe del aviso -->
+    <section class="hero">
+      <div class="container hero__wrap">
+        <div class="hero__content">
+          <nav class="util-muted" aria-label="Miga de pan" style="margin-bottom:8px">
+            <a href="../inicio.html">Inicio</a> ·
+            <a href="../avisos.html">Avisos</a> ·
+            <span>Título del aviso</span>
+          </nav>
+
+          <h1 class="hero__title">Título del aviso</h1>
+          <p class="hero__desc">Subtítulo o línea breve opcional del aviso.</p>
+
+          <div class="hero__actions util-row" style="gap:8px;flex-wrap:wrap">
+            <span class="tag">Fecha: 13/10/2025</span>
+            <a class="btn btn--soft" href="../avisos.html">Volver a Avisos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenido del aviso -->
+    <section class="section">
+      <div class="container">
+        <div class="prose">
+          <h2>Resumen</h2>
+          <p>
+            Aquí va el resumen claro y directo del aviso. Mantén la información esencial
+            y los llamados a la acción de forma visible.
+          </p>
+
+          <h2>Detalles</h2>
+          <p>
+            Desarrolla aquí la información completa del aviso: fechas, requisitos, formulario,
+            contactos, etc. Todo el texto dentro de <code>.prose</code> queda justificado.
+          </p>
+
+          <h3>Puntos clave</h3>
+          <ul>
+            <li>Fecha límite: 30/10/2025.</li>
+            <li>Dirigido a: estudiantes de todas las facultades.</li>
+            <li>Modalidad: presencial / virtual.</li>
+          </ul>
+
+          <h3>Contacto</h3>
+          <p>
+            Para consultas, escribir a <a href="mailto:comunicacion@udeo.edu.gt">comunicacion@udeo.edu.gt</a>
+            o llamar al PBX (XXX) XXX-XXXX.
+          </p>
+
+          <!-- Adjuntos opcionales -->
+          <h3>Descargas</h3>
+          <ul>
+            <li><a href="../../pdfs/convocatoria-ejemplo.pdf" target="_blank" rel="noopener">Bases de la convocatoria (PDF)</a></li>
+            <li><a href="../../pdfs/formato-inscripcion.docx" target="_blank" rel="noopener">Formato de inscripción (DOCX)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie del aviso (CTA sencillo) -->
+    <section class="section section--tight">
+      <div class="container util-row" style="justify-content:flex-end">
+        <a class="btn btn--ghost" href="../avisos.html">Volver a Avisos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid">
+      <div class="col-12 util-stack-sm">
+        <div class="footer__brand">
+          <img src="../../img/logo-udeo-mini.png" alt="UDEO" width="28" height="28">
+          <span>Plataforma Académica UDEO</span>
+        </div>
+        <div class="footer__bottom">© 2025 Universidad de Occidente — Sede Mazatenango. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/inicio.js"></script>
+  <script src="../../js/contenido-inicio.js"></script>
+  <!-- <script src="../../js/avisos-detalle.js"></script> -->
+</body>
+</html>

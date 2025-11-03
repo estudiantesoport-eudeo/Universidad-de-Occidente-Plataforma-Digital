@@ -1,0 +1,247 @@
+<!-- html/ingenieria/ing-0006-desarrollo-de-software-etico-y-responsabilidad-social.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desarrollo de software ético: desafíos y responsabilidad social del ingeniero — Plataforma Académica UDEO</title>
+
+  <!-- Este archivo está DOS niveles debajo de /css -->
+  <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner" style="width:100%">
+      <!-- Siempre apunta al index de la raíz -->
+      <a href="/index.html" class="brand" aria-label="Inicio">
+        <div class="brand__logo">
+          <img src="/img/logo-udeo.png" alt="Logo" width="44" height="44">
+        </div>
+        <div class="brand__title">Plataforma Académica UDEO</div>
+      </a>
+
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" hidden>
+      <label for="nav-toggle" class="nav-btn" aria-label="Abrir menú">
+        <span></span>
+      </label>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="/index.html">Inicio</a></li>
+          <li><a class="nav__link" href="/html/facultades.html">Facultades</a></li>
+          <li><a class="nav__link" href="/html/avisos.html">Avisos</a></li>
+        </ul>
+      </nav>
+
+      <form id="form-busqueda" class="searchbar" role="search" onsubmit="return false;" style="margin-left:12px">
+        <input id="search-keywords" class="input" type="search" placeholder="Buscar por palabras clave">
+        <button id="btn-search" class="btn btn--primary" type="button">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="header-spacer"></div>
+
+    <!-- Héroe del artículo sin sidebar (para que el contenido pueda expandirse más abajo) -->
+    <section class="hero">
+      <div class="container hero__wrap" style="grid-template-columns:1fr">
+        <div class="hero__content">
+          <nav class="util-muted" aria-label="Miga de pan" style="margin-bottom:8px">
+            <a href="/index.html">Inicio</a> ·
+            <a href="/html/facultades.html">Facultades</a> ·
+            <span>Ingeniería</span>
+          </nav>
+
+          <h1 class="hero__title">Desarrollo de software ético: desafíos y responsabilidad social del ingeniero</h1>
+          <p class="hero__desc">Una reflexión sobre la ética, la transparencia y la responsabilidad en la ingeniería del software moderno.</p>
+
+          <div class="hero__actions util-row" style="gap:8px;flex-wrap:wrap">
+            <button class="btn btn--primary" id="btn-descargar" type="button" data-print>Descargar PDF</button>
+            <a class="btn btn--ghost" href="/html/facultades.html">Ver Facultad</a>
+            <a class="btn btn--soft" href="/index.html">Volver</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <section id="contenido" class="section">
+      <div class="container">
+        <!-- Agrega 'prose--flow' si quieres columnas automáticas en pantallas anchas -->
+        <div class="prose prose--flow" id="art-contenido">
+          <h2>Introducción</h2>
+          <p>
+            En una era dominada por la digitalización, el desarrollo de software no solo implica escribir líneas de código, sino también tomar decisiones con implicaciones éticas y sociales. Cada algoritmo, base de datos o interfaz afecta de forma directa la vida de las personas que interactúan con ellos. Por ello, el ingeniero en sistemas tiene una responsabilidad que va más allá de la eficiencia técnica: debe garantizar que la tecnología sirva al bien común. Este artículo aborda los desafíos éticos del desarrollo de software, los dilemas que enfrentan los profesionales del área y la importancia de una práctica responsable y consciente.
+          </p>
+
+          <h2>Contenido</h2>
+          <p>
+            El desarrollo de software ético implica considerar el impacto social, ambiental y humano de las soluciones tecnológicas. A diferencia de una perspectiva puramente técnica, el enfoque ético coloca al usuario en el centro, asegurando que los sistemas sean seguros, transparentes y justos.
+          </p>
+
+          <h3>Principales desafíos éticos en el desarrollo de software</h3>
+          <ul>
+            <li><strong>Privacidad de los datos:</strong> el almacenamiento masivo de información personal exige mecanismos sólidos de protección y consentimiento informado.</li>
+            <li><strong>Transparencia algorítmica:</strong> los sistemas de inteligencia artificial y recomendación pueden reproducir sesgos si no se supervisan adecuadamente.</li>
+            <li><strong>Seguridad informática:</strong> desarrollar software sin contemplar vulnerabilidades puede poner en riesgo a millones de usuarios.</li>
+            <li><strong>Propiedad intelectual:</strong> el uso indebido de código abierto o recursos de terceros plantea conflictos legales y morales.</li>
+            <li><strong>Impacto social y laboral:</strong> la automatización excesiva puede generar desempleo o desigualdad si no se gestiona con responsabilidad.</li>
+          </ul>
+
+          <h3>Principios fundamentales del software ético</h3>
+          <ol>
+            <li><strong>Beneficencia:</strong> crear software que aporte valor real a la sociedad.</li>
+            <li><strong>No maleficencia:</strong> evitar desarrollar sistemas que puedan causar daño, directa o indirectamente.</li>
+            <li><strong>Justicia:</strong> asegurar la equidad en el acceso y uso de las tecnologías.</li>
+            <li><strong>Autonomía:</strong> respetar la libertad y privacidad de los usuarios.</li>
+            <li><strong>Responsabilidad profesional:</strong> reconocer y asumir las consecuencias de las decisiones técnicas.</li>
+          </ol>
+
+          <h3>Ejemplos de aplicación ética en ingeniería de software</h3>
+          <ul>
+            <li>Implementar políticas de privacidad claras en aplicaciones que gestionen datos personales.</li>
+            <li>Diseñar interfaces accesibles para personas con discapacidad.</li>
+            <li>Usar inteligencia artificial de manera explicable, evitando la toma de decisiones automatizadas sin supervisión humana.</li>
+            <li>Promover el uso de software libre y de código abierto como alternativa colaborativa y transparente.</li>
+          </ul>
+
+          <h3>Responsabilidad social del ingeniero</h3>
+          <p>
+            El ingeniero de software no puede desligarse de su impacto social. En muchos casos, la presión por cumplir plazos o reducir costos puede llevar a pasar por alto consideraciones éticas fundamentales. Es aquí donde entra la responsabilidad social del ingeniero, entendida como el compromiso de diseñar sistemas que respeten la dignidad humana, fomenten la inclusión y contribuyan al desarrollo sostenible.
+          </p>
+
+          <h3>Buenas prácticas para el desarrollo ético</h3>
+          <ul>
+            <li>Documentar las decisiones técnicas relevantes.</li>
+            <li>Evaluar el impacto social antes de implementar una tecnología.</li>
+            <li>Garantizar diversidad en los equipos de desarrollo para evitar sesgos.</li>
+            <li>Cumplir normativas y estándares internacionales de protección de datos.</li>
+            <li>Fomentar una cultura de ética profesional dentro de las organizaciones.</li>
+          </ul>
+
+          <h2>Resumen</h2>
+          <p>
+            El desarrollo de software ético no es una tendencia, sino una necesidad. A medida que la tecnología se vuelve más poderosa, también aumenta la responsabilidad de quienes la crean. El ingeniero moderno debe ser consciente de que cada programa, aplicación o sistema que diseña tiene consecuencias reales en la vida de las personas. Actuar con ética es, por tanto, una forma de ingeniería más completa: aquella que combina conocimiento técnico con sensibilidad humana. Solo así la innovación podrá considerarse verdaderamente inteligente y socialmente justa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ficha del artículo + Cómo citar (lado a lado, como pediste) -->
+    <section id="resumen" class="section section--tight">
+      <div class="container grid">
+        <!-- Col 1: Ficha -->
+        <aside class="col-6">
+          <div class="sidebar" style="margin-top:12px">
+            <h4 class="sidebar__title">Ficha del artículo</h4>
+
+            <div class="util-stack-sm">
+              <div class="util-row" style="gap:8px;flex-wrap:wrap">
+                <div class="badge">Ingeniería</div>
+                <div class="badge">Ingeniería en Sistemas</div>
+                <div class="badge">2025</div>
+              </div>
+            </div>
+
+            <div class="util-stack-sm" style="margin-top:12px">
+              <div class="util-muted">Autor</div>
+              <div>S. Gómez</div>
+            </div>
+
+            <div class="util-stack-sm">
+              <div class="util-muted">Tipo de trabajo</div>
+              <div>Artículo académico</div>
+            </div>
+
+            <div class="util-stack-sm">
+              <div class="util-muted">Palabras clave</div>
+              <div class="chips">
+                <span class="chip">ética</span>
+                <span class="chip">software</span>
+                <span class="chip">responsabilidad social</span>
+                <span class="chip">tecnología</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Col 2: Cómo citar -->
+        <aside class="col-6">
+          <div class="sidebar" style="margin-top:12px">
+            <h4 class="sidebar__title">Cómo citar</h4>
+            <div class="prose">
+              <p id="art-cita-apa" class="util-muted">
+                Gómez, S. (2025). <i>Desarrollo de software ético: desafíos y responsabilidad social del ingeniero</i>.
+                Universidad de Occidente — Sede Mazatenango.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Metadatos -->
+    <section id="metadatos" class="section section--tight">
+      <div class="container">
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th>Campo</th><th>Detalle</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fecha de publicación</td>
+                <td>30 de octubre de 2025</td>
+              </tr>
+              <tr>
+                <td>Institución</td>
+                <td>Universidad de Occidente — Sede Mazatenango</td>
+              </tr>
+              <tr>
+                <td>Licencia</td>
+                <td>Todos los derechos reservados</td>
+              </tr>
+              <tr>
+                <td>Identificador</td>
+                <td>art-ing-0006</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Relacionados -->
+    <section id="relacionados" class="section">
+      <div class="container util-stack-md">
+        <h2 class="section__title">Más de esta facultad</h2>
+        <p class="section__subtitle">Artículos relacionados</p>
+        <div class="home-cards" id="cards-relacionados"></div>
+        <div class="util-row" style="justify-content:flex-end">
+          <a class="btn btn--ghost" href="/html/facultades.html">Ver todos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid">
+      <div class="col-12 util-stack-sm">
+        <div class="footer__brand">
+          <img src="/img/logo-udeo-mini.png" alt="UDEO" width="28" height="28">
+          <span>Plataforma Académica UDEO</span>
+        </div>
+        <div class="footer__bottom">© 2025 Universidad de Occidente — Sede Mazatenango. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: estado global (Repo), datos y loader del artículo -->
+  <script src="../../js/inicio.js"></script>
+  <script src="../../js/contenido-inicio.js"></script>
+  <script>window.ART_ID = 'art-ing-0006';</script>
+  <script src="../../js/articulo.js"></script>
+  <script src="../../js/print-article.js"></script>
+</body>
+</html>

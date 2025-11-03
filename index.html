@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es" data-app-root="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plataforma Académica UDEO — Inicio</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    #form-busqueda{position:relative}
+    #form-busqueda .input{padding-right:40px}
+    #search-suggest{position:absolute;left:0;right:0;top:calc(100% + 6px);background:#fff;border:1px solid var(--c-border);border-radius:14px;box-shadow:var(--shadow-2);padding:6px;z-index:1200;max-height:320px;overflow:auto}
+    #search-suggest[aria-hidden="true"]{display:none}
+    .sg-item{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border-radius:10px;color:var(--c-text);text-decoration:none}
+    .sg-item span:first-child{font-weight:800;color:var(--c-primary)}
+    .sg-item span:last-child{font-size:.86rem;color:var(--c-muted)}
+    .sg-item:hover,.sg-item.is-active{background:color-mix(in srgb, var(--c-primary) 8%, #fff 92%)}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner" style="width:100%">
+      <a href="index.html" class="brand" aria-label="Inicio">
+        <div class="brand__logo">
+          <img src="img/logo-udeo.png" alt="Logo" width="44" height="44">
+        </div>
+        <div class="brand__title">Plataforma Académica UDEO</div>
+      </a>
+
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" hidden>
+      <label for="nav-toggle" class="nav-btn" aria-label="Abrir menú">
+        <span></span>
+      </label>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link is-active" href="index.html">Inicio</a></li>
+          <li><a class="nav__link" href="html/facultades.html">Facultades</a></li>
+          <li><a class="nav__link" href="html/avisos.html">Avisos</a></li>
+        </ul>
+      </nav>
+
+      <form id="form-busqueda" class="searchbar" role="search" onsubmit="return false;" data-prefix-root="" data-prefix-html="">
+        <input id="search-keywords" class="input" type="search" placeholder="Buscar por palabras clave" autocomplete="off" aria-autocomplete="list" aria-controls="search-suggest">
+        <button id="btn-search" class="btn btn--primary" type="button">Buscar</button>
+        <div id="search-suggest" role="listbox" aria-hidden="true"></div>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="header-spacer"></div>
+
+    <section class="hero hero--home">
+      <div class="container hero__wrap">
+        <div class="hero__content">
+          <span class="hero__kicker">UDEO • Mazatenango</span>
+          <h1 class="hero__title">Publicación y consulta de trabajos académicos estudiantiles</h1>
+          <p class="hero__desc">Explora artículos, proyectos e investigaciones por facultad y carrera. Encuentra contenidos con tu buscador de palabras clave.</p>
+          <div class="hero__actions">
+            <a href="html/facultades.html" class="btn btn--primary">Explorar Facultades</a>
+            <a href="#como-funciona" class="btn btn--ghost">Cómo funciona</a>
+            <a href="#requisitos" class="btn btn--soft">Requisitos de publicación</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container kpis" id="kpis">
+        <div class="kpi">
+          <div class="kpi__value" id="kpi-trabajos">—</div>
+          <div class="kpi__label">Trabajos publicados</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi__value" id="kpi-facultades">—</div>
+          <div class="kpi__label">Facultades</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi__value" id="kpi-carreras">—</div>
+          <div class="kpi__label">Carreras</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container util-stack-md">
+        <h2 class="section__title">Trabajos destacados</h2>
+        <p class="section__subtitle">Una muestra de publicaciones recientes</p>
+        <div class="home-cards" id="cards-trabajos"></div>
+        <div class="pagination" id="paginacion-trabajos"></div>
+        <div class="util-row" style="justify-content:flex-end">
+          <a class="btn btn--ghost" href="html/facultades.html">Ver todos por Facultad</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="facultades" class="section">
+      <div class="container util-stack-md">
+        <h2 class="section__title">Explorar por Facultad</h2>
+        <p class="section__subtitle">Elige una facultad para ver sus publicaciones</p>
+
+        <div class="faculties-filters">
+          <div class="chips">
+            <a class="chip" aria-pressed="true" href="html/facultades.html">Todas</a>
+            <a class="chip" href="html/arquitectura.html">Arquitectura</a>
+            <a class="chip" href="html/ingenieria.html">Ingeniería</a>
+            <a class="chip" href="html/economicas.html">Ciencias Económicas</a>
+            <a class="chip" href="html/humanidades.html">Humanidades</a>
+            <a class="chip" href="html/derecho.html">Derecho</a>
+            <a class="chip" href="html/salud.html">Ciencias de la Salud</a>
+          </div>
+        </div>
+
+        <div class="faculty-grid">
+          <article class="faculty-card">
+            <div class="faculty-card__banner"></div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__title">Arquitectura</h3>
+              <p class="faculty-card__desc">Diseño, proyecto arquitectónico y comunicación visual.</p>
+              <div class="faculty-card__meta">
+                <span class="badge" id="fac-arq-trabajos">— trabajos</span>
+                <span class="badge" id="fac-arq-carreras">— carreras</span>
+              </div>
+            </div>
+            <div class="faculty-card__actions">
+              <a class="btn btn--ghost" href="html/arquitectura.html">Ver detalles</a>
+              <a class="btn btn--primary" href="html/arquitectura.html#ultimos">Ver trabajos</a>
+            </div>
+          </article>
+
+          <article class="faculty-card">
+            <div class="faculty-card__banner"></div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__title">Facultad de Ingeniería</h3>
+              <p class="faculty-card__desc">Software, redes, electrónica, ciencia de datos y automatización.</p>
+              <div class="faculty-card__meta">
+                <span class="badge" id="fac-ing-trabajos">— trabajos</span>
+                <span class="badge" id="fac-ing-carreras">— carreras</span>
+              </div>
+            </div>
+            <div class="faculty-card__actions">
+              <a class="btn btn--ghost" href="html/ingenieria.html">Ver detalles</a>
+              <a class="btn btn--primary" href="html/ingenieria.html#ultimos">Ver trabajos</a>
+            </div>
+          </article>
+
+          <article class="faculty-card">
+            <div class="faculty-card__banner"></div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__title">Ciencias Económicas</h3>
+              <p class="faculty-card__desc">Finanzas, administración, marketing y emprendimiento.</p>
+              <div class="faculty-card__meta">
+                <span class="badge" id="fac-eco-trabajos">— trabajos</span>
+                <span class="badge" id="fac-eco-carreras">— carreras</span>
+              </div>
+            </div>
+            <div class="faculty-card__actions">
+              <a class="btn btn--ghost" href="html/economicas.html">Ver detalles</a>
+              <a class="btn btn--primary" href="html/economicas.html#ultimos">Ver trabajos</a>
+            </div>
+          </article>
+
+          <article class="faculty-card">
+            <div class="faculty-card__banner"></div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__title">Humanidades</h3>
+              <p class="faculty-card__desc">Educación, psicología, comunicación y ciencias sociales.</p>
+              <div class="faculty-card__meta">
+                <span class="badge" id="fac-hum-trabajos">— trabajos</span>
+                <span class="badge" id="fac-hum-carreras">— carreras</span>
+              </div>
+            </div>
+            <div class="faculty-card__actions">
+              <a class="btn btn--ghost" href="html/humanidades.html">Ver detalles</a>
+              <a class="btn btn--primary" href="html/humanidades.html#ultimos">Ver trabajos</a>
+            </div>
+          </article>
+
+          <article class="faculty-card">
+            <div class="faculty-card__banner"></div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__title">Derecho</h3>
+              <p class="faculty-card__desc">Análisis de casos, derecho público y privado, y tecnología jurídica.</p>
+              <div class="faculty-card__meta">
+                <span class="badge" id="fac-der-trabajos">— trabajos</span>
+                <span class="badge" id="fac-der-carreras">— carreras</span>
+              </div>
+            </div>
+            <div class="faculty-card__actions">
+              <a class="btn btn--ghost" href="html/derecho.html">Ver detalles</a>
+              <a class="btn btn--primary" href="html/derecho.html#ultimos">Ver trabajos</a>
+            </div>
+          </article>
+
+          <article class="faculty-card">
+            <div class="faculty-card__banner"></div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__title">Ciencias de la Salud</h3>
+              <p class="faculty-card__desc">Cuidados, gestión y prácticas clínicas.</p>
+              <div class="faculty-card__meta">
+                <span class="badge" id="fac-salud-trabajos">— trabajos</span>
+                <span class="badge" id="fac-salud-carreras">— carreras</span>
+              </div>
+            </div>
+            <div class="faculty-card__actions">
+              <a class="btn btn--ghost" href="html/salud.html">Ver detalles</a>
+              <a class="btn btn--primary" href="html/salud.html#ultimos">Ver trabajos</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="section">
+      <div class="container grid">
+        <div class="col-8">
+          <div class="faculty-hero util-stack-sm">
+            <h3 class="title">Cómo funciona</h3>
+            <div class="prose">
+              <ol>
+                <li>Prepara tu PDF conforme a los requisitos.</li>
+                <li>Envía el archivo y metadatos a <strong>repositorio@udeo.edu.gt</strong>.</li>
+                <li>Revisión de formato y metadatos en 24–48 h.</li>
+                <li>Publicación en la facultad correspondiente.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <aside class="col-4">
+          <div class="sidebar">
+            <h4 class="sidebar__title">Accesos rápidos</h4>
+            <nav class="list">
+              <a href="#requisitos"><span>Requisitos de publicación</span><span>›</span></a>
+              <a href="html/facultades.html"><span>Ver Facultades</span><span>›</span></a>
+              <a href="html/avisos.html"><span>Avisos</span><span>›</span></a>
+            </nav>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="requisitos" class="section">
+      <div class="container grid">
+        <div class="col-12">
+          <div class="faculty-hero">
+            <h3 class="title">Requisitos mínimos de publicación</h3>
+            <div class="prose" id="requisitos-prose">
+              <ul>
+                <li>Archivo en PDF (máx. 50 MB).</li>
+                <li>Portada institucional, resumen, palabras clave y referencias.</li>
+                <li>Metadatos: título, autor(es), carrera, facultad, año, tutor/a y tipo de trabajo.</li>
+              </ul>
+              <p>Envía tu propuesta a <strong>repositorioudeomazate@gmail.com</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="avisos" class="section section--tight">
+      <div class="container util-stack-md">
+        <h2 class="section__title">Avisos</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Título</th>
+              <th>Resumen</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-avisos"></tbody>
+        </table>
+        <div class="util-row" style="justify-content:flex-end">
+          <a class="btn btn--ghost" href="html/avisos.html">Ver todos los avisos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid">
+      <div class="col-12 util-stack-sm">
+        <div class="footer__brand">
+          <img src="img/logo-udeo-mini.png" alt="UDEO" width="28" height="28">
+          <span>Plataforma Académica UDEO</span>
+        </div>
+        <div class="footer__bottom">© 2025 Universidad de Occidente — Sede Mazatenango. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/inicio.js"></script>
+  <script src="js/contenido-inicio.js"></script>
+</body>
+</html>

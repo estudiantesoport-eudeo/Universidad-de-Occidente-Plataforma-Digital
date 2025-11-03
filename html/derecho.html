@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facultad de Derecho — Plataforma Académica UDEO</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="header">
+  <div class="container header-inner" style="width:100%">
+    <!-- Ir al index de la raíz -->
+    <a href="../index.html" class="brand" aria-label="Inicio">
+      <div class="brand__logo">
+        <img src="../img/logo-udeo.png" alt="Logo" width="44" height="44">
+      </div>
+      <div class="brand__title">Plataforma Académica UDEO</div>
+    </a>
+
+    <input id="nav-toggle" class="nav-toggle" type="checkbox" hidden>
+    <label for="nav-toggle" class="nav-btn" aria-label="Abrir menú">
+      <span></span>
+    </label>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <!-- Inicio -> index fuera de /html -->
+        <li><a class="nav__link" href="../index.html">Inicio</a></li>
+        <!-- Estas dos están dentro de /html, se quedan relativas -->
+        <li><a class="nav__link is-active" href="facultades.html">Facultades</a></li>
+        <li><a class="nav__link" href="avisos.html">Avisos</a></li>
+      </ul>
+    </nav>
+
+    <form id="form-busqueda" class="searchbar" role="search" onsubmit="return false;" style="margin-left:12px">
+      <input id="search-keywords" class="input" type="search" placeholder="Buscar por palabras clave en Arquitectura">
+      <button id="btn-search" class="btn btn--primary" type="button">Buscar</button>
+    </form>
+  </div>
+</header>
+
+
+  <main>
+    <div class="header-spacer"></div>
+
+    <section class="hero">
+      <div class="container hero__wrap">
+        <div class="hero__content">
+          <span class="hero__kicker">UDEO • Mazatenango</span>
+          <h1 class="hero__title">Facultad de Derecho</h1>
+          <p class="hero__desc">Artículos y análisis en derecho público y privado, acceso a la justicia y tecnología jurídica.</p>
+          <div class="hero__actions">
+            <a href="#trabajos" class="btn btn--primary">Ver trabajos</a>
+            <a href="facultades.html#derecho" class="btn btn--ghost">Volver a Facultades</a>
+          </div>
+        </div>
+        <div class="faculty-hero util-stack-sm">
+          <h3 class="title">Perfil de la facultad</h3>
+          <p class="desc">Formación jurídica con enfoque ético y práctico. Se promueve el razonamiento crítico, la investigación y la solución de controversias con base en la normativa vigente.</p>
+          <div class="chips">
+            <span class="chip">Derecho Público</span>
+            <span class="chip">Derecho Privado</span>
+            <span class="chip">Análisis de Casos</span>
+            <span class="chip">Tecnología Jurídica</span>
+            <span class="chip">Derechos Humanos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPIs (Trabajos y Carreras) -->
+    <section class="section">
+      <div class="container kpis" id="kpis-derecho">
+        <div class="kpi">
+          <div class="kpi__value" id="der-kpi-trabajos">—</div>
+          <div class="kpi__label">Trabajos publicados</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi__value" id="der-kpi-carreras">—</div>
+          <div class="kpi__label">Carreras</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carreras de Derecho -->
+    <section id="carreras" class="section section--tight">
+      <div class="container">
+        <div class="prose">
+          <h2>Carreras de Derecho</h2>
+          <p class="util-muted">Oferta académica activa de la Facultad de Derecho.</p>
+          <ul class="list-bulleted" id="der-lista-carreras">
+            <!-- JS inyectará <li>...</li> por cada carrera -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Presentación -->
+    <section id="presentacion" class="section">
+      <div class="container">
+        <div class="prose">
+          <h2>Sobre la Facultad</h2>
+          <p>Los trabajos integran análisis doctrinal, jurisprudencial y normativo. Se valoran las implicaciones sociales y tecnológicas del derecho, así como el acceso efectivo a la justicia.</p>
+          <p>Las publicaciones incluyen metadatos y referencias para facilitar la búsqueda, la citación y la colaboración académica.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODOS los trabajos de Derecho (ordenados del más reciente al más antiguo) -->
+    <section id="trabajos" class="section">
+      <div class="container util-stack-md">
+        <h2 class="section__title">Trabajos de Derecho</h2>
+        <p class="section__subtitle">Ordenados del más reciente al más antiguo</p>
+
+        <div class="home-cards" id="cards-ultimos-derecho">
+          <!-- JS inyectará TODAS las tarjetas de Derecho -->
+        </div>
+
+        <!-- (Opcional) contenedor de paginación si luego la agregamos por JS -->
+        <div class="pagination" id="der-paginacion"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid">
+      <div class="col-12 util-stack-sm">
+        <div class="footer__brand">
+          <img src="../img/logo-udeo-mini.png" alt="UDEO" width="28" height="28">
+          <span>Plataforma Académica UDEO</span>
+        </div>
+        <div class="footer__bottom">© 2025 Universidad de Occidente — Sede Mazatenango. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Estado global (Repo) y lógica de Derecho -->
+  <script src="../js/inicio.js"></script>
+  <script src="../js/contenido-inicio.js"></script>
+  <script src="../js/derecho.js"></script>
+</body>
+</html>

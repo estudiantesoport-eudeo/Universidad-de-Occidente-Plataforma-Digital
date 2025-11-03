@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Telemedicina y atención primaria: avances y retos en Guatemala — Plataforma Académica UDEO</title>
+  <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner" style="width:100%">
+      <a href="/index.html" class="brand" aria-label="Inicio">
+        <div class="brand__logo">
+          <img src="/img/logo-udeo.png" alt="Logo" width="44" height="44">
+        </div>
+        <div class="brand__title">Plataforma Académica UDEO</div>
+      </a>
+
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" hidden>
+      <label for="nav-toggle" class="nav-btn" aria-label="Abrir menú"><span></span></label>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="/index.html">Inicio</a></li>
+          <li><a class="nav__link" href="/html/facultades.html">Facultades</a></li>
+          <li><a class="nav__link" href="/html/avisos.html">Avisos</a></li>
+        </ul>
+      </nav>
+
+      <form id="form-busqueda" class="searchbar" role="search" onsubmit="return false;" style="margin-left:12px">
+        <input id="search-keywords" class="input" type="search" placeholder="Buscar por palabras clave">
+        <button id="btn-search" class="btn btn--primary" type="button">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="header-spacer"></div>
+
+    <section class="hero">
+      <div class="container hero__wrap" style="grid-template-columns:1fr">
+        <div class="hero__content">
+          <nav class="util-muted" aria-label="Miga de pan" style="margin-bottom:8px">
+            <a href="/index.html">Inicio</a> ·
+            <a href="/html/facultades.html">Facultades</a> ·
+            <span>Salud</span>
+          </nav>
+
+          <h1 class="hero__title">Telemedicina y atención primaria: avances y retos en Guatemala</h1>
+          <p class="hero__desc">Panorama de la adopción de servicios digitales en salud, sus barreras y oportunidades para una atención primaria más inclusiva.</p>
+
+          <div class="hero__actions util-row" style="gap:8px;flex-wrap:wrap">
+            <button class="btn btn--primary" id="btn-descargar" type="button" data-print>Descargar PDF</button>
+            <a class="btn btn--ghost" href="/html/facultades.html">Ver Facultad</a>
+            <a class="btn btn--soft" href="/index.html">Volver</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contenido" class="section">
+      <div class="container">
+        <div class="prose prose--flow" id="art-contenido">
+          <h2>Introducción</h2>
+          <p>
+            La telemedicina ha emergido como una herramienta clave para ampliar el acceso a la atención médica, especialmente en regiones rurales o con limitaciones de infraestructura. En Guatemala, donde la desigualdad territorial y económica continúa siendo un desafío, este modelo representa una oportunidad para mejorar la cobertura sanitaria y optimizar los recursos disponibles.
+          </p>
+          <p>
+            Sin embargo, la implementación de la telemedicina no está exenta de obstáculos. Aspectos como la conectividad, la capacitación del personal de salud y la aceptación por parte de la población influyen directamente en su éxito. Este artículo examina los avances alcanzados, los retos persistentes y las perspectivas futuras de la telemedicina dentro del sistema de atención primaria en el país.
+          </p>
+
+          <h2>Contenido</h2>
+
+          <h3>1. Evolución de la telemedicina en Guatemala</h3>
+          <p>
+            La telemedicina comenzó a tomar fuerza en Guatemala a raíz de la pandemia de COVID-19, cuando los servicios presenciales se vieron limitados. Desde entonces, diversas instituciones públicas y privadas han impulsado programas de atención virtual. Entre los avances más relevantes se destacan:
+          </p>
+          <ul>
+            <li><strong>Consultas médicas en línea:</strong> permiten a pacientes recibir orientación sin desplazarse, reduciendo los costos y tiempos de espera.</li>
+            <li><strong>Uso de plataformas digitales seguras:</strong> hospitales y clínicas adoptaron sistemas de historia clínica electrónica.</li>
+            <li><strong>Capacitación médica virtual:</strong> los profesionales de salud reciben formación continua mediante cursos en línea.</li>
+            <li><strong>Integración de teleasistencia en zonas rurales:</strong> proyectos piloto han permitido conectar comunidades alejadas con especialistas urbanos.</li>
+          </ul>
+
+          <h3>2. Retos actuales del sistema de telemedicina</h3>
+          <p>
+            A pesar de los avances, la telemedicina en Guatemala enfrenta múltiples desafíos estructurales. Algunos de los principales son:
+          </p>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Tipo de reto</th>
+                  <th>Descripción</th>
+                  <th>Consecuencia</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Tecnológico</strong></td>
+                  <td>Limitado acceso a internet y equipos adecuados en áreas rurales.</td>
+                  <td>Dificulta la continuidad del servicio.</td>
+                </tr>
+                <tr>
+                  <td><strong>Formativo</strong></td>
+                  <td>Falta de capacitación en el uso de herramientas digitales.</td>
+                  <td>Reduce la eficacia de la atención virtual.</td>
+                </tr>
+                <tr>
+                  <td><strong>Económico</strong></td>
+                  <td>Escasez de recursos para inversión en infraestructura tecnológica.</td>
+                  <td>Mantiene la brecha entre zonas urbanas y rurales.</td>
+                </tr>
+                <tr>
+                  <td><strong>Cultural</strong></td>
+                  <td>Desconfianza hacia las consultas virtuales o desconocimiento del proceso.</td>
+                  <td>Baja participación de pacientes.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Superar estos retos requiere políticas públicas sostenibles y colaboración entre los sectores de salud, educación y tecnología.</p>
+
+          <h3>3. Oportunidades y futuro de la telemedicina en la atención primaria</h3>
+          <p>
+            La telemedicina tiene el potencial de transformar la atención primaria en Guatemala, volviéndola más inclusiva y eficiente. Algunas oportunidades a considerar son:
+          </p>
+          <ul>
+            <li><strong>Desarrollo de redes interinstitucionales:</strong> coordinación entre hospitales, universidades y centros de salud locales.</li>
+            <li><strong>Incorporación de inteligencia artificial:</strong> para la detección temprana de enfermedades y el monitoreo remoto de pacientes.</li>
+            <li><strong>Expansión de programas de salud pública digital:</strong> enfocados en prevención, educación sanitaria y seguimiento de casos.</li>
+            <li><strong>Participación comunitaria:</strong> fomentar la confianza mediante talleres informativos y promotores de salud locales.</li>
+          </ul>
+          <p>
+            Si se consolida un marco regulatorio sólido y se invierte en infraestructura tecnológica, la telemedicina puede convertirse en un componente esencial de la atención primaria en el país.
+          </p>
+
+          <h2>Resumen</h2>
+          <p>
+            La telemedicina representa un paso significativo hacia la equidad en salud en Guatemala. Aunque los avances han sido notables, los retos tecnológicos, económicos y culturales siguen limitando su alcance. Su integración plena requiere una estrategia nacional que priorice la conectividad, la capacitación del personal médico y la sensibilización de la población. Más que una solución temporal, la telemedicina es una herramienta permanente para fortalecer el sistema sanitario y garantizar el derecho universal a la salud.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resumen" class="section section--tight">
+      <div class="container grid">
+        <aside class="col-6">
+          <div class="sidebar" style="margin-top:12px">
+            <h4 class="sidebar__title">Ficha del artículo</h4>
+            <div class="util-stack-sm">
+              <div class="util-row" style="gap:8px;flex-wrap:wrap">
+                <div class="badge">Salud</div>
+                <div class="badge">Facultad de Salud</div>
+                <div class="badge">2025</div>
+              </div>
+            </div>
+            <div class="util-stack-sm" style="margin-top:12px">
+              <div class="util-muted">Autor</div>
+              <div>L. Rodríguez</div>
+            </div>
+            <div class="util-stack-sm">
+              <div class="util-muted">Tipo de trabajo</div>
+              <div>Artículo académico</div>
+            </div>
+            <div class="util-stack-sm">
+              <div class="util-muted">Palabras clave</div>
+              <div class="chips">
+                <span class="chip">telemedicina</span>
+                <span class="chip">atención primaria</span>
+                <span class="chip">salud digital</span>
+                <span class="chip">Guatemala</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <aside class="col-6">
+          <div class="sidebar" style="margin-top:12px">
+            <h4 class="sidebar__title">Cómo citar</h4>
+            <div class="prose">
+              <p id="art-cita-apa" class="util-muted">
+                Rodríguez, L. (2025). <i>Telemedicina y atención primaria: avances y retos en Guatemala</i>. Universidad de Occidente — Sede Mazatenango.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="metadatos" class="section section--tight">
+      <div class="container">
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th>Campo</th><th>Detalle</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fecha de publicación</td>
+                <td>2 de noviembre de 2025</td>
+              </tr>
+              <tr>
+                <td>Institución</td>
+                <td>Universidad de Occidente — Sede Mazatenango</td>
+              </tr>
+              <tr>
+                <td>Licencia</td>
+                <td>Todos los derechos reservados</td>
+              </tr>
+              <tr>
+                <td>Identificador</td>
+                <td>art-sal-0003</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="relacionados" class="section">
+      <div class="container util-stack-md">
+        <h2 class="section__title">Más de esta facultad</h2>
+        <p class="section__subtitle">Artículos relacionados</p>
+        <div class="home-cards" id="cards-relacionados"></div>
+        <div class="util-row" style="justify-content:flex-end">
+          <a class="btn btn--ghost" href="/html/facultades.html">Ver todos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid">
+      <div class="col-12 util-stack-sm">
+        <div class="footer__brand">
+          <img src="/img/logo-udeo-mini.png" alt="UDEO" width="28" height="28">
+          <span>Plataforma Académica UDEO</span>
+        </div>
+        <div class="footer__bottom">© 2025 Universidad de Occidente — Sede Mazatenango. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/inicio.js"></script>
+  <script src="../../js/contenido-inicio.js"></script>
+  <script>window.ART_ID = 'art-sal-0003';</script>
+  <script src="../../js/articulo.js"></script>
+  <script src="../../js/print-article.js"></script>
+</body>
+</html>
