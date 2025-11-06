@@ -351,7 +351,7 @@ Repo.addTrabajo({
   facultad: 'Ciencias Económicas',
   facultadKey: 'economicas',
   carrera: 'Licenciatura en Mercadotecnia',
-  fecha: '2025-10-25',
+  fecha: '2023-10-25',
   etiquetas: ['marketing digital', 'consumo', 'postpandemia', 'estrategias comerciales'],
   portada: '../img/economicas/cover-marketing-postpandemia.jpg',
   detalleUrl: 'economicas/eco-0005-marketing-digital-y-comportamiento-del-consumidor-postpandemia.html',

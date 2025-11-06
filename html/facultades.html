@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facultades — Plataforma Académica UDEO</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="header">
+  <div class="container header-inner" style="width:100%">
+    <!-- Ir al index de la raíz -->
+    <a href="../index.html" class="brand" aria-label="Inicio">
+      <div class="brand__logo">
+        <img src="../img/logo-udeo.png" alt="Logo" width="44" height="44">
+      </div>
+      <div class="brand__title">Plataforma Académica UDEO</div>
+    </a>
+
+    <input id="nav-toggle" class="nav-toggle" type="checkbox" hidden>
+    <label for="nav-toggle" class="nav-btn" aria-label="Abrir menú">
+      <span></span>
+    </label>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="../index.html">Inicio</a></li>
+        <li><a class="nav__link is-active" href="facultades.html">Facultades</a></li>
+        <li><a class="nav__link" href="avisos.html">Avisos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+    <div class="header-spacer"></div>
+
+    <section class="hero">
+      <div class="container hero__wrap">
+        <div class="hero__content">
+          <span class="hero__kicker">UDEO • Mazatenango</span>
+          <h1 class="hero__title">Facultades</h1>
+          <p class="hero__desc">Explora las áreas académicas de la UDEO y consulta publicaciones por disciplina.</p>
+        </div>
+        <div class="faculty-hero util-stack-sm">
+          <h3 class="title">Áreas principales</h3>
+          <p class="desc">Ingresa a cada facultad para ver sus líneas de trabajo y artículos recientes.</p>
+          <div class="chips">
+            <a class="chip" href="arquitectura.html">Arquitectura</a>
+            <a class="chip" href="ingenieria.html">Ingeniería</a>
+            <a class="chip" href="economicas.html">Ciencias Económicas</a>
+            <a class="chip" href="humanidades.html">Humanidades</a>
+            <a class="chip" href="derecho.html">Derecho</a>
+            <a class="chip" href="salud.html">Ciencias de la Salud</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container util-stack-md">
+        <h2 class="section__title">Facultades</h2>
+        <p class="section__subtitle">Selecciona una para continuar</p>
+
+        <div class="faculty-grid" id="lista-facultades">
+          <!-- Arquitectura -->
+          <article class="faculty-card" id="arquitectura">
+            <div class="faculty-card__banner"></div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__title">Arquitectura</h3>
+              <p class="faculty-card__desc">Diseño, proyecto arquitectónico y comunicación visual.</p>
+            </div>
+            <div class="faculty-card__actions">
+              <a class="btn btn--primary" href="arquitectura.html">Entrar a Arquitectura</a>
+            </div>
+          </article>
+
+          <!-- Ingeniería -->
+          <article class="faculty-card" id="ingenieria">
+            <div class="faculty-card__banner"></div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__title">Facultad de Ingeniería</h3>
+              <p class="faculty-card__desc">Software, redes, electrónica, ciencia de datos y automatización.</p>
+            </div>
+            <div class="faculty-card__actions">
+              <a class="btn btn--primary" href="ingenieria.html">Entrar a Ingeniería</a>
+            </div>
+          </article>
+
+          <!-- Ciencias Económicas -->
+          <article class="faculty-card" id="economicas">
+            <div class="faculty-card__banner"></div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__title">Ciencias Económicas</h3>
+              <p class="faculty-card__desc">Finanzas, administración, marketing y emprendimiento.</p>
+            </div>
+            <div class="faculty-card__actions">
+              <a class="btn btn--primary" href="economicas.html">Entrar a Económicas</a>
+            </div>
+          </article>
+
+          <!-- Humanidades -->
+          <article class="faculty-card" id="humanidades">
+            <div class="faculty-card__banner"></div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__title">Humanidades</h3>
+              <p class="faculty-card__desc">Educación, psicología, comunicación y ciencias sociales.</p>
+            </div>
+            <div class="faculty-card__actions">
+              <a class="btn btn--primary" href="humanidades.html">Entrar a Humanidades</a>
+            </div>
+          </article>
+
+          <!-- Derecho -->
+          <article class="faculty-card" id="derecho">
+            <div class="faculty-card__banner"></div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__title">Derecho</h3>
+              <p class="faculty-card__desc">Derecho público y privado, análisis de casos y tecnología jurídica.</p>
+            </div>
+            <div class="faculty-card__actions">
+              <a class="btn btn--primary" href="derecho.html">Entrar a Derecho</a>
+            </div>
+          </article>
+
+          <!-- Ciencias de la Salud -->
+          <article class="faculty-card" id="salud">
+            <div class="faculty-card__banner"></div>
+            <div class="faculty-card__body">
+              <h3 class="faculty-card__title">Ciencias de la Salud</h3>
+              <p class="faculty-card__desc">Cuidados, gestión y prácticas clínicas.</p>
+            </div>
+            <div class="faculty-card__actions">
+              <a class="btn btn--primary" href="salud.html">Entrar a Salud</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid">
+      <div class="col-12 util-stack-sm">
+        <div class="footer__brand">
+          <img src="../img/logo-udeo-mini.png" alt="UDEO" width="28" height="28">
+          <span>Plataforma Académica UDEO</span>
+        </div>
+        <div class="footer__bottom">© 2025 Universidad de Occidente — Sede Mazatenango. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
